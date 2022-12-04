@@ -14,62 +14,79 @@ export default function Home() {
       </Head>
 
       <main className="text-white">
-        <div className="h-full items-center justify-between px-32 py-16 sm:flex">
-          <div className="mb-10  sm:mr-6">
+        {/* <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+  <Image className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={profilePic} alt="" width="384" height="512">
+  <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+    <blockquote>
+      <p className="text-lg font-medium">
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      </p>
+    </blockquote>
+    <figcaption className="font-medium">
+      <div className="text-sky-500 dark:text-sky-400">
+        Sarah Dayan
+      </div>
+      <div className="text-slate-700 dark:text-slate-500">
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+</figure> */}
+        <div className=" flex items-center justify-between">
+          <div className="mx-auto my-auto flex items-center justify-between p-10 lg:p-20">
             <p
-              className="text-xl font-bold leading-8 tracking-wide text-gray-100 first-letter:text-5xl
-           first-letter:font-bold first-letter:text-pink-600 selection:bg-pink-600 selection:text-white sm:text-3xl xl:indent-2
+              className="mr-8 text-xs font-bold leading-8 tracking-wide text-gray-100
+           first-letter:text-5xl first-letter:font-bold first-letter:text-pink-600 selection:bg-pink-600 selection:text-white xl:indent-2
            "
             >
               Hey, I am Shafei, a <br />
-              <span className="rounded-3xl bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl xl:md:text-9xl">
+              <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-xl font-bold  text-transparent md:text-4xl lg:text-9xl">
                 Fullstack Web Developer
               </span>
             </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="relative p-2 sm:max-w-xl">
-              <div className="absolute -inset-0.5 animate-tilt rounded-3xl bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
+            <div className="relative w-28 p-2 md:w-52 lg:w-96">
+              <div className="absolute -inset-0.5 animate-tilt rounded-l-2xl bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
               <Image
                 src={profilePic}
                 alt=""
-                className="relative rounded-l-3xl"
-                quality={100}
+                className="relative rounded-l-2xl"
               />
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-6 gap-4 bg-gradient-to-r from-pink-600 to-purple-600 py-16 pl-32 text-center text-8xl">
-          <Si.SiTypescript />
-          <Si.SiJavascript />
-          <Si.SiNodedotjs />
-          <Si.SiExpress />
-          <Si.SiGraphql />
-          <Si.SiHtml5 />
-          <Si.SiCss3 />
-          <Si.SiTailwindcss />
-          <Si.SiFirebase />
-          <Si.SiHeroku />
-          <Si.SiPython />
-          <Si.SiFlask />
-          <Si.SiSequelize />
-          <Si.SiMysql />
-          <Si.SiPostgresql />
-          <Si.SiMongodb />
-          <Si.SiReact />
-          <Si.SiNextdotjs />
+        <div className="grid grid-cols-3 gap-4 bg-gradient-to-r from-pink-600 to-purple-600 py-8 text-center text-5xl md:grid-cols-6 md:text-8xl">
+          <Si.SiTypescript className="mx-auto" />
+          <Si.SiJavascript className="mx-auto" />
+          <Si.SiNodedotjs className="mx-auto" />
+          <Si.SiExpress className="mx-auto" />
+          <Si.SiGraphql className="mx-auto" />
+          <Si.SiHtml5 className="mx-auto" />
+          <Si.SiCss3 className="mx-auto" />
+          <Si.SiTailwindcss className="mx-auto" />
+          <Si.SiFirebase className="mx-auto" />
+          <Si.SiHeroku className="mx-auto" />
+          <Si.SiPython className="mx-auto" />
+          <Si.SiFlask className="mx-auto" />
+          <Si.SiSequelize className="mx-auto" />
+          <Si.SiMysql className="mx-auto" />
+          <Si.SiPostgresql className="mx-auto" />
+          <Si.SiMongodb className="mx-auto" />
+          <Si.SiReact className="mx-auto" />
+          <Si.SiNextdotjs className="mx-auto" />
         </div>
-        <div className="py-8 text-3xl">
+        <div className="m py-8 md:text-3xl">
           <div className="flex items-center justify-center p-2 align-baseline">
-            <Ai.AiFillMail className="text-4xl" />
+            <Ai.AiFillMail className="md:text-4xl" />
             <span className="ml-2">alshafei.2430@gmail.com</span>
           </div>
           <div className="flex items-center justify-center p-2 align-baseline">
-            <Ai.AiFillPhone className="text-4xl" />
+            <Ai.AiFillPhone className="md:text-4xl" />
             <span className="ml-2">+201555369706</span>
           </div>
           <div className="flex items-center justify-center p-2 align-baseline">
-            <Ai.AiFillGithub className="text-4xl" />
+            <Ai.AiFillGithub className="md:text-4xl" />
             <a
               className="... ml-2 after:content-['_↗']"
               href="https://github.com/Alshafei2430"
@@ -80,7 +97,7 @@ export default function Home() {
             </a>
           </div>
           <div className="flex items-center justify-center p-2 align-baseline">
-            <Ai.AiFillLinkedin className="text-4xl" />
+            <Ai.AiFillLinkedin className="md:text-4xl" />
             <a
               className="... ml-2 after:content-['_↗']"
               href="https://www.linkedin.com/in/shafei00"
