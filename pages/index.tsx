@@ -14,22 +14,22 @@ export default function Home() {
       </Head>
 
       <main className="text-white">
-        <div className="px-32 py-16 sm:flex items-center justify-between h-full">
+        <div className="h-full items-center justify-between px-32 py-16 sm:flex">
           <div className="mb-10  sm:mr-6">
             <p
-              className="font-bold text-xl sm:text-3xl tracking-wide leading-8 text-gray-100
-           selection:bg-pink-600 selection:text-white first-letter:text-5xl first-letter:text-pink-600 first-letter:font-bold xl:indent-2
+              className="text-xl font-bold leading-8 tracking-wide text-gray-100 first-letter:text-5xl
+           first-letter:font-bold first-letter:text-pink-600 selection:bg-pink-600 selection:text-white sm:text-3xl xl:indent-2
            "
             >
               Hey, I am Shafei, a <br />
-              <span className="text-4xl md:text-6xl xl:md:text-9xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl text-transparent bg-clip-text">
+              <span className="rounded-3xl bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-4xl font-bold text-transparent md:text-6xl xl:md:text-9xl">
                 Fullstack Web Developer
               </span>
             </p>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <div className="relative p-2 sm:max-w-xl">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <div className="absolute -inset-0.5 animate-tilt rounded-3xl bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
               <Image
                 src={profilePic}
                 alt=""
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pl-32 py-16 text-center grid grid-cols-6 gap-4 text-8xl bg-gradient-to-r from-pink-600 to-purple-600">
+        <div className="grid grid-cols-6 gap-4 bg-gradient-to-r from-pink-600 to-purple-600 py-16 pl-32 text-center text-8xl">
           <Si.SiTypescript />
           <Si.SiJavascript />
           <Si.SiNodedotjs />
@@ -59,29 +59,29 @@ export default function Home() {
           <Si.SiReact />
           <Si.SiNextdotjs />
         </div>
-        <div className="text-3xl py-8">
-          <div className="flex align-baseline p-2 items-center justify-center">
+        <div className="py-8 text-3xl">
+          <div className="flex items-center justify-center p-2 align-baseline">
             <Ai.AiFillMail className="text-4xl" />
             <span className="ml-2">alshafei.2430@gmail.com</span>
           </div>
-          <div className="flex align-baseline p-2 items-center justify-center">
+          <div className="flex items-center justify-center p-2 align-baseline">
             <Ai.AiFillPhone className="text-4xl" />
             <span className="ml-2">+201555369706</span>
           </div>
-          <div className="flex align-baseline p-2 items-center justify-center">
+          <div className="flex items-center justify-center p-2 align-baseline">
             <Ai.AiFillGithub className="text-4xl" />
             <a
-              className="ml-2 after:content-['_↗'] ..."
+              className="... ml-2 after:content-['_↗']"
               href="https://github.com/Alshafei2430"
               target="_blank"
             >
               Alshafei2430
             </a>
           </div>
-          <div className="flex align-baseline p-2 items-center justify-center">
+          <div className="flex items-center justify-center p-2 align-baseline">
             <Ai.AiFillLinkedin className="text-4xl" />
             <a
-              className="ml-2 after:content-['_↗'] ..."
+              className="... ml-2 after:content-['_↗']"
               href="https://www.linkedin.com/in/shafei00"
               target="_blank"
             >
