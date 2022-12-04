@@ -74,6 +74,7 @@ export default function Home() {
               className="... ml-2 after:content-['_↗']"
               href="https://github.com/Alshafei2430"
               target="_blank"
+              rel="noreferrer"
             >
               Alshafei2430
             </a>
@@ -84,6 +85,7 @@ export default function Home() {
               className="... ml-2 after:content-['_↗']"
               href="https://www.linkedin.com/in/shafei00"
               target="_blank"
+              rel="noreferrer"
             >
               Abdulrahman Alshafei
             </a>
