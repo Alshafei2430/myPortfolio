@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={nunito.className}>
+    <html lang="en" className={`${nunito.className} snap-y`}>
       <body className="bg-gradient-to-bl from-teal-900 to-cyan-800 text-sky-100">
         <Navbar />
         <main>{children}</main>

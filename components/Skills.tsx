@@ -25,14 +25,14 @@ const Skill = ({ name, x, y }: PropsType) => {
 
 export default function Skills() {
   return (
-    <>
+    <div className="snap-center">
       <h2 className="mt-80 w-full text-center text-8xl font-bold">Skills</h2>
       <div className="relative my-32 mx-auto flex h-full min-h-[720px] w-[80%] items-center justify-center rounded-sm border-r-2 border-l-2 border-yellow-200 px-20 ">
         {skills.map(({ name, x, y }, index) => (
           <Skill name={name} x={x} y={y} key={`${name}-${index}`} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
